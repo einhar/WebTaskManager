@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Apr 21 23:16:38 CEST 2018:
+ Uruchamianie wersji The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631) systemu Derby: instancja a816c00e-0162-ea10-e474-000010195420
+w katalogu bazy danych memory:C:\Users\Oskar\Desktop\2018.04.21 - bootsample\WebTaskManager\testdb sun.misc.Launcher$AppClassLoader@18b4aac2 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_151-b12
+user.dir=C:\Users\Oskar\Desktop\2018.04.21 - bootsample\WebTaskManager
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Uruchomiono program ładujący klasę bazy danych - derby.database.classpath=''
