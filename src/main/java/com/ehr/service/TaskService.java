@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -29,7 +30,7 @@ public class TaskService {
     }
 
     public Task findTask(Integer id) {
-        return taskRepository.findById(id);
+        return taskRepository.findById(id).get();
     }
 
     public void save(Task task) {
