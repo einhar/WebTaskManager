@@ -3,7 +3,7 @@ package com.ehr.model;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name = "t_taskS")
+@Entity(name = "t_tasks")
 public class Task {
 
     @Id
