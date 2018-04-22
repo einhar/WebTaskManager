@@ -5,12 +5,14 @@ import com.ehr.model.Task;
 import com.ehr.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 
 @Controller
 public class MainController {
@@ -40,7 +42,8 @@ public class MainController {
     }
 
     @PostMapping("/save-task")
-    public String saveTask(@ModelAttribute Task task, HttpServletRequest request) {
+    public String saveTask(@ModelAttribute Task task, BindingResult bindingResult, HttpServletRequest request) {
+        task.setDateCreated(new Date());
         taskService.save(task);
         request.setAttribute("tasks", taskService.findAll());
         request.setAttribute("mode", "MODE_TASKS");

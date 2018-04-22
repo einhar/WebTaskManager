@@ -63,8 +63,8 @@
                             <th>Description</th>
                             <th>Date Created</th>
                             <th>Finished</th>
-                            <th></th>
-                            <th></th>
+                            <th>Edit</th>
+                            <th>Delete</th>
                         </tr>
                         </thead>
                         <tbody>
